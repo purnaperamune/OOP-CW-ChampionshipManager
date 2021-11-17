@@ -1,3 +1,5 @@
+import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class MenuOption {
@@ -11,6 +13,7 @@ public class MenuOption {
                     "Display a driver information-------------------3\n"+
                     "Display Formula1 driver table------------------4\n"+
                     "Add results of a new race----------------------5\n"+
+                    "Saving data in a file--------------------------6\n"+
                     "Exit the Formula1 Championship Manager---------EXT\n");
 
             System.out.print("Enter your choice : ");
@@ -20,16 +23,19 @@ public class MenuOption {
                     createDriver();
                     break;
                 case "2":
-                    //Deleting an existing driver
+                    deleteDriver();
                     break;
                 case "3":
-                    //Displaying information of a selected driver
+                    displaySelectedDriver();
                     break;
                 case "4":
-                    //Displaying Formula1 driver table
+                    displayFormula1DriverTable();
                     break;
                 case "5":
-                    //Adding results of a new race
+                    addRaceResult();
+                    break;
+                case "6":
+                    saveToFile();
                     break;
                 case "EXT":
                     exitProgram = "EXT";
@@ -40,15 +46,15 @@ public class MenuOption {
         }
     }
 }
-
     public static void createDriver() {
         Scanner input=new Scanner(System.in);
+        System.out.println("-----Creating a new driver-----");
         System.out.println("Enter the name of the driver?");
         String name=input.next();
         System.out.println("Enter the location?");
         String location=input.next();
         System.out.println("Enter the name of the team?");
-        String team=location=input.next();
+        String team=input.next();
         System.out.println("Number of 1st places?");
         int firstPlaces=input.nextInt();
         System.out.println("Number of 2nd places?");
@@ -65,9 +71,52 @@ public class MenuOption {
         Formula1ChampionshipManager newDriver=new Formula1ChampionshipManager();
         newDriver.createDriver(formula1Driver,name,location,team,firstPlaces,secondPlaces,thirdPlaces,totalPoints,numberOfRaces);
     }
+    public static void deleteDriver(){
+        Scanner input=new Scanner(System.in);
+        Formula1ChampionshipManager formula1Driver=new Formula1ChampionshipManager();
+        formula1Driver.displayExistingDrivers();
+        System.out.println("");
+        System.out.println("Enter the name of the driver to delete?");
+        String name=input.next();
+        formula1Driver.deleteDriver(name);
+    }
+    public static void displaySelectedDriver() {
+        Scanner input=new Scanner(System.in);
+        Formula1ChampionshipManager formula1Driver=new Formula1ChampionshipManager();
+        formula1Driver.displayExistingDrivers();
+        System.out.println("");
+        System.out.println("Enter the name of the driver to display statistics?");
+        String name=input.next();
+        formula1Driver.displaySelectedDriver(name);
+    }
+    public static void displayFormula1DriverTable(){
+        //To be implemented
+    }
+    public static void addRaceResult() {
+        Formula1ChampionshipManager formula1ChampionshipManager=new Formula1ChampionshipManager();
+        System.out.println("-----Adding Race Results-----");
+        String []placesList=new String[10];
+        Scanner input=new Scanner(System.in);
+        System.out.println("Enter first 10 places one by one to update the points table");
+        for(int x=0;x<10;x++){
+            String name=input.next();
+            System.out.println(x+"----"+name);
+            placesList[x]=name;
+        }
+        formula1ChampionshipManager.addRaceResult(placesList);
+    }
+    public static void saveToFile()  {
+        Formula1ChampionshipManager formula1ChampionshipManager=new Formula1ChampionshipManager();
+        try {
+            formula1ChampionshipManager.saveToFile();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
     public static void main(String[] args) {
         menu();
+
     }
 }
 

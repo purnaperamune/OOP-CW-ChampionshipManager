@@ -1,0 +1,9 @@
+Name: Purna
+Location: Tm
+Team: Benz
+First Positions: 100
+Second Positions: 33
+Third Positions: 234
+Total Points: 34
+Participated Races: 23
+------------------

@@ -18,6 +18,29 @@ public class Formula1Driver extends Driver{
         this.totalPoints=totalPoints;
         this.numberOfRaces=numberOfRaces;
     }
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getLocation() {
+        return location;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
+    }
+
+    public String getTeam() {
+        return team;
+    }
+
+    public void setTeam(String team) {
+        this.team = team;
+    }
 
     public int getFirstPositions() {
         return firstPositions;
