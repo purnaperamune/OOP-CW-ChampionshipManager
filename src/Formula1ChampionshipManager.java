@@ -8,6 +8,7 @@ public class Formula1ChampionshipManager implements ChampionshipManager{
     File formula1File = new File("playerInformation.txt");
 
 
+
     public ArrayList nameToString(){
         ArrayList nameToString= new ArrayList<String>();
         for(int x=0;x< driverList.size();x++){
@@ -117,7 +118,7 @@ public class Formula1ChampionshipManager implements ChampionshipManager{
 
     @Override
     public void displayFormula1DriverTable() {
-        Collections.sort(driverList, new CompareStat());
+        Collections.sort(driverList, new ComparePoints());
         String[][] formula1Table = new String[driverList.size()+1][];
         formula1Table[0] = new String[]{"Name","Location","Team","1st Places","2nd Places","3rd Places",
                 "Total Points","No. of Races"};
@@ -301,7 +302,37 @@ public class Formula1ChampionshipManager implements ChampionshipManager{
         f1.setNumberOfRaces(Integer.parseInt(totRaces));
 
         driverList.add(f1);
+    }
 
+    // ------Method for Graphical user interface section-------
+    public static String[][] statTable(){
+        String[] statType=new String[8];
+        String[][] statArray=new String[driverList.size()][8];
+        for(int x=0;x< driverList.size();x++){
+            for(int y=0;y<8;y++){
+                statType= new String[]{driverList.get(x).getName(),driverList.get(x).getLocation(),driverList.get(x).getTeam()
+                        , String.valueOf(driverList.get(x).getFirstPositions()), String.valueOf(driverList.get(x).getSecondPositions())
+                        , String.valueOf(driverList.get(x).getThirdPositions()), String.valueOf(driverList.get(x).getTotalPoints()),String.valueOf(driverList.get(x).getNumberOfRaces())};
+                statArray[x][y]=statType[y];
+            }
+        }
+        return statArray;
+    }
+
+    public static String[][] driverStatTableDescending(){
+        Collections.sort(driverList, new ComparePoints());
+        String[][] statArrayAscending=statTable();
+        return statArrayAscending;
+    }
+    public static String[][] driverStatTableAscending(){
+        Collections.sort(driverList, new ComparePoints().reversed());
+        String[][] statArrayAscending=statTable();
+        return statArrayAscending;
+    }
+    public static String[][] driverStatTablePosition(){
+        Collections.sort(driverList, new CompareFirstPosition());
+        String[][] statArrayPosition=statTable();
+        return statArrayPosition;
 
     }
 

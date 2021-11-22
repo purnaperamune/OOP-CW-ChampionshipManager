@@ -1,16 +1,11 @@
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
-import javax.swing.*;
 import java.util.Scanner;
 
 public class MenuOption {
     public static void menu() throws FileNotFoundException {
         Scanner input=new Scanner(System.in);
-        System.out.println("-------------------------------------------------------------");
-        System.out.println("--------Welcome to the Formula1 Championship Manager!--------");
-        System.out.println("-------------------------------------------------------------");
-        System.out.print("\n");
         String exitProgram="d";
         while (exitProgram!="EXT"){
             System.out.println("    ------------------Menu Options------------------\n" +
@@ -21,6 +16,7 @@ public class MenuOption {
                     "    Display Formula1 driver table------------------5\n"+
                     "    Add results of a new race----------------------6\n"+
                     "    Update the system with past results------------7\n"+
+                    "    Open GUI---------------------------------------8\n"+
                     "    Exit the Formula1 Championship Manager---------EXT\n");
 
             System.out.print("Enter your choice : ");
@@ -48,6 +44,10 @@ public class MenuOption {
                     Formula1ChampionshipManager formula1ChampionshipManager=new Formula1ChampionshipManager();
                     formula1ChampionshipManager.getSavedInfo();
                     System.out.println("System updated successfully!\n");
+                    break;
+                case "8":
+                    PointsTableGUI gui = new PointsTableGUI();
+                    gui.setVisible(true);
                     break;
                 case "EXT":
                     exitProgram = "EXT";
@@ -183,6 +183,11 @@ public class MenuOption {
     }
 
     public static void main(String[] args) throws FileNotFoundException {
+        System.out.println("-------------------------------------------------------------");
+        System.out.println("--------Welcome to the Formula1 Championship Manager!--------");
+        System.out.println("-------------------------------------------------------------");
+        System.out.print("\n");
+
         menu();
     }
 }

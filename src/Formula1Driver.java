@@ -18,6 +18,7 @@ public class Formula1Driver extends Driver{
         this.totalPoints=totalPoints;
         this.numberOfRaces=numberOfRaces;
     }
+
     public String getName() {
         return name;
     }
