@@ -1,13 +1,12 @@
+import javax.swing.*;
 import java.io.*;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Scanner;
+import java.util.*;
 
 public class Formula1ChampionshipManager implements ChampionshipManager{
     static ArrayList <Formula1Driver> driverList=new ArrayList<Formula1Driver>();
+    static ArrayList <Race> raceInfo=new ArrayList<Race>();
+
     File formula1File = new File("playerInformation.txt");
-
-
 
     public ArrayList nameToString(){
         ArrayList nameToString= new ArrayList<String>();
@@ -49,7 +48,6 @@ public class Formula1ChampionshipManager implements ChampionshipManager{
         }
         System.out.println("Successfully updated the constructor team!\n");
     }
-
 
     @Override
     public void deleteDriver() {
@@ -136,10 +134,16 @@ public class Formula1ChampionshipManager implements ChampionshipManager{
     }
 
     @Override
-    public void addRaceResult(String[] racePositions) {
+    public void addRaceResult(String[] racePositions, String rDate, String rName,String first,String second,String third) {
         Formula1Driver formula1Driver=new Formula1Driver();
+
         int []pointsAllocationList={25,18,15,12,10,8,6,4,2,1};
 
+        String raceName=rName;
+        String raceDate=rDate;
+
+        Race r1 = new Race(raceName,raceDate,first,second,third);
+        raceInfo.add(r1);
 
         ArrayList nameList=new ArrayList();
         nameList=nameToString();
@@ -318,6 +322,17 @@ public class Formula1ChampionshipManager implements ChampionshipManager{
         }
         return statArray;
     }
+    public static String[][] raceInfoTable(){
+        String[] type=new String[2];
+        String[][] raceInfoArray=new String[raceInfo.size()][5];
+        for(int x=0;x< raceInfo.size();x++){
+            for(int y=0;y<5;y++){
+                type= new String[]{raceInfo.get(x).getRaceName(),raceInfo.get(x).getRaceDate(),raceInfo.get(x).getFirstPlace(),raceInfo.get(x).getSecondPlace(),raceInfo.get(x).getThirdPlace()};
+                raceInfoArray[x][y]=type[y];
+            }
+        }
+        return raceInfoArray;
+    }
 
     public static String[][] driverStatTableDescending(){
         Collections.sort(driverList, new ComparePoints());
@@ -335,6 +350,76 @@ public class Formula1ChampionshipManager implements ChampionshipManager{
         return statArrayPosition;
 
     }
+    public static String[][] sortByDate(){
+        Collections.sort(raceInfo,new CompareDate());
+        String[][] raceArray=raceInfoTable();
+        return raceArray;
+    }
 
+    public void randomRace(){
+        ArrayList <Integer> randomDrivers=new ArrayList<Integer>();
+        Scanner input=new Scanner(System.in);
+        String dateOfRace;
+        String nameOfRace;
+
+        String[] randomRaceWinners=new String[10];
+
+        if(driverList.size()<2){
+            System.out.println("There should be minimum of 2 existing drivers!\n");
+        }
+        else {
+            nameOfRace = JOptionPane.showInputDialog("Name of the race?");
+            dateOfRace = JOptionPane.showInputDialog("Date of the race?");
+
+            if(driverList.size()>10){
+                for(int x=0;x<10;x++){
+                    randomDrivers.add(x);
+                }
+                Collections.shuffle(randomDrivers);
+
+                for(int x=0;x<10;x++){
+                    randomRaceWinners[x]=driverList.get(randomDrivers.get(x)).getName();
+                }
+
+//                System.out.println(("\n\n---Random Race results---"));
+
+//                    System.out.println("Position "+(x+1)+": "+driverList.get(randomDrivers.get(x)).getName());
+                JOptionPane.showMessageDialog(null,"Position 1:"+driverList.get(randomDrivers.get(0)).getName()+"\n"+
+                        "Position 2:"+driverList.get(randomDrivers.get(1)).getName()+"\n"+
+                        "Position 3:"+driverList.get(randomDrivers.get(2)).getName()+"\n"+
+                        "Position 4:"+driverList.get(randomDrivers.get(3)).getName()+"\n"+
+                        "Position 5:"+driverList.get(randomDrivers.get(4)).getName()+"\n"+
+                        "Position 6:"+driverList.get(randomDrivers.get(5)).getName()+"\n"+
+                        "Position 7:"+driverList.get(randomDrivers.get(6)).getName()+"\n"+
+                        "Position 8:"+driverList.get(randomDrivers.get(7)).getName()+"\n"+
+                        "Position 9:"+driverList.get(randomDrivers.get(8)).getName()+"\n"+
+                        "Position 10:"+driverList.get(randomDrivers.get(9)).getName());
+
+
+                System.out.println("");
+                addRaceResult(randomRaceWinners,dateOfRace,nameOfRace,driverList.get(randomDrivers.get(0)).getName(),driverList.get(randomDrivers.get(1)).getName(),driverList.get(randomDrivers.get(2)).getName());
+
+            }
+            else {
+                for(int x=0;x< driverList.size();x++){
+                    randomDrivers.add(x);
+                }
+                Collections.shuffle(randomDrivers);
+
+                for(int x=0;x< driverList.size();x++) {
+                    randomRaceWinners[x]=driverList.get(randomDrivers.get(x)).getName();
+                    System.out.println(randomDrivers.get(x));
+                }
+//                System.out.println(("---Random Race results---"));
+                for(int x=0;x<10;x++){
+                    JOptionPane.showMessageDialog(null,"Position "+(x+1)+": "+driverList.get(randomDrivers.get(x)).getName());
+
+                }
+                System.out.println("");
+                addRaceResult(randomRaceWinners,dateOfRace,nameOfRace,driverList.get(randomDrivers.get(0)).getName(),driverList.get(randomDrivers.get(1)).getName(),driverList.get(randomDrivers.get(2)).getName());
+
+            }
+        }
+    }
 }
 

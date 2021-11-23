@@ -1,0 +1,42 @@
+
+T
+java:S1197‡"8Move the array designator from the variable to the type.(¡şÏÖøÿÿÿÿ
+q
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(ï´µ©8®ÂæÔ/
+v
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(ÒÜÅ¸úÿÿÿÿ8®ÂæÔ/
+C
+java:S1604?"(Make this anonymous inner class a lambda(®¨ëåúÿÿÿÿ
+C
+java:S1604G"(Make this anonymous inner class a lambda(»Ş›ûÿÿÿÿ
+>
+java:S1604O"(Make this anonymous inner class a lambda(õ„«î
+C
+java:S1604W"(Make this anonymous inner class a lambda(ÂæÃ‰üÿÿÿÿ
+C
+java:S1604h"(Make this anonymous inner class a lambda(ñá×Îûÿÿÿÿ
+o
+java:S1104
+"TMake topPanel a static final constant or non-public and provide accessors if needed.(Û¾âşÿÿÿÿ
+l
+java:S1104"QMake table a static final constant or non-public and provide accessors if needed.(¡øñ™úÿÿÿÿ
+l
+java:S1104"VMake scrollPane a static final constant or non-public and provide accessors if needed.(Å¦€
+m
+java:S1104"WMake tableHeader a static final constant or non-public and provide accessors if needed.(ôûçû
+u
+java:S1104"_Make tableHeaderRaceInfo a static final constant or non-public and provide accessors if needed.(Üˆêç
+v
+java:S1104"`Make driverStatDescending a static final constant or non-public and provide accessors if needed.(†Áç
+z
+java:S1104"_Make driverStatAscending a static final constant or non-public and provide accessors if needed.(Í¨¯Âıÿÿÿÿ
+t
+java:S1104"^Make driverStatPosition a static final constant or non-public and provide accessors if needed.(‘Úëù
+i
+java:S1104"TMake raceInfo a static final constant or non-public and provide accessors if needed.(‹ì“Y
+b	java:S101q"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ÁÚÁ’
+b	java:S101v"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Îä°
+g	java:S101{"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(¹ÿüÓùÿÿÿÿ
+c	java:S101€"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Û‰ëÌ
+0
+java:S1220""Move this file to a named package.

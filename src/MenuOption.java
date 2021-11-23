@@ -1,10 +1,11 @@
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Random;
 import java.util.Scanner;
 
 public class MenuOption {
-    public static void menu() throws FileNotFoundException {
+     public static void menu() throws FileNotFoundException {
         Scanner input=new Scanner(System.in);
         String exitProgram="d";
         while (exitProgram!="EXT"){
@@ -21,6 +22,10 @@ public class MenuOption {
 
             System.out.print("Enter your choice : ");
             String userInput = input.next();
+            if(userInput=="G"){
+                PointsTableGUI gui = new PointsTableGUI();
+                gui.setVisible(true);
+            }
             switch (userInput) {
                 case "1":
                     createDriver();
@@ -48,6 +53,16 @@ public class MenuOption {
                 case "8":
                     PointsTableGUI gui = new PointsTableGUI();
                     gui.setVisible(true);
+                    break;
+
+                case "9":
+                    Formula1ChampionshipManager formula1ChampionshipManager1=new Formula1ChampionshipManager();
+                    formula1ChampionshipManager1.randomRace();
+                    break;
+                case "10":
+                    Formula1ChampionshipManager formula1ChampionshipManager2 =new Formula1ChampionshipManager();
+                    formula1ChampionshipManager2.sortByDate();
+
                     break;
                 case "EXT":
                     exitProgram = "EXT";
@@ -142,14 +157,25 @@ public class MenuOption {
         formula1ChampionshipManager.displayFormula1DriverTable();
     }
     public static void addRaceResult() {
+        Scanner input=new Scanner(System.in);
         Formula1ChampionshipManager formula1ChampionshipManager=new Formula1ChampionshipManager();
 
         ArrayList nameList=new ArrayList();
         nameList=formula1ChampionshipManager.nameToString();
 
+        String dateOfRace;
+        String nameOfRace;
+
+        System.out.println("Enter name of the race?");
+        nameOfRace=input.next();
+
+        System.out.println("Enter date of the race?");
+        dateOfRace=input.next();
+
+
+
         System.out.println("-----Adding Race Results-----");
         String []placesList=new String[10];
-        Scanner input=new Scanner(System.in);
         System.out.println("Enter first 10 places one by one to update the points table");
         for(int x=0;x<10;x++){
             String name=input.next();
@@ -169,7 +195,7 @@ public class MenuOption {
                 System.out.println("Enter the place starting from "+(x+2));
             }
         }
-        formula1ChampionshipManager.addRaceResult(placesList);
+        formula1ChampionshipManager.addRaceResult(placesList,dateOfRace,nameOfRace,placesList[0],placesList[1],placesList[2]);
         System.out.println("Race results successfully added to the points table!\n");
     }
 
@@ -188,7 +214,10 @@ public class MenuOption {
         System.out.println("-------------------------------------------------------------");
         System.out.print("\n");
 
-        menu();
+         menu();
+
+
+
     }
 }
 

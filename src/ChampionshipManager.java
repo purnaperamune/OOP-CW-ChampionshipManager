@@ -5,5 +5,6 @@ public interface ChampionshipManager {
     void deleteDriver();
     void displaySelectedDriver();
     void displayFormula1DriverTable();
-    void addRaceResult(String[] racePositions);
+
+    void addRaceResult(String[] racePositions, String rDate, String rName, String first, String second, String third);
 }
