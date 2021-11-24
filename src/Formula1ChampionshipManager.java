@@ -7,6 +7,7 @@ public class Formula1ChampionshipManager implements ChampionshipManager{
     static ArrayList <Race> raceInfo=new ArrayList<Race>();
 
     File formula1File = new File("playerInformation.txt");
+    File formula1File2 = new File("raceInformation.txt");
 
     public ArrayList nameToString(){
         ArrayList nameToString= new ArrayList<String>();
@@ -30,7 +31,7 @@ public class Formula1ChampionshipManager implements ChampionshipManager{
                 ,totalPoints,numberOfRaces);
         driverList.add(formula1Driver);
         try {
-            saveToFile();
+            saveToFileDriverInfo();
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -42,7 +43,7 @@ public class Formula1ChampionshipManager implements ChampionshipManager{
         driverList.get(index).setTeam(newTeam);
 
         try {
-            saveToFile();
+            saveToFileDriverInfo();
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -75,7 +76,7 @@ public class Formula1ChampionshipManager implements ChampionshipManager{
             }
         }
         try {
-            saveToFile();
+            saveToFileDriverInfo();
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -246,7 +247,8 @@ public class Formula1ChampionshipManager implements ChampionshipManager{
             }
         }
         try {
-            saveToFile();
+            saveToFileDriverInfo();
+            saveToFileRaceInfo();
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -266,7 +268,7 @@ public class Formula1ChampionshipManager implements ChampionshipManager{
         driverList.get(nameList.indexOf(racePositions[y])).setNumberOfRaces(participatedRaces);
     }
 
-    public void saveToFile() throws IOException {
+    public void saveToFileDriverInfo() throws IOException {
         FileWriter formula1File = new FileWriter("playerInformation.txt");
         for(int x=0;x<driverList.size();x++){
             formula1File.write(driverList.get(x).getName()+" "
@@ -282,19 +284,49 @@ public class Formula1ChampionshipManager implements ChampionshipManager{
         formula1File.close();
         System.out.println("");
     }
+    public void saveToFileRaceInfo() throws IOException {
+        FileWriter formula1File = new FileWriter("raceInformation.txt");
+        for(int x=0;x<raceInfo.size();x++){
+            formula1File.write(raceInfo.get(x).getRaceName()+" "
+                    +raceInfo.get(x).getRaceDate()+" "
+                    +raceInfo.get(x).getFirstPlace()+" "
+                    +raceInfo.get(x).getSecondPlace()+" "
+                    +raceInfo.get(x).getThirdPlace()+"\n");
+            formula1File.write("");
+        }
+        formula1File.close();
+        System.out.println("");
+    }
 
-    public void getSavedInfo() throws FileNotFoundException {
+    public void getSavedInfoDriver() throws FileNotFoundException {
         FileInputStream formula1File=new FileInputStream("playerInformation.txt");
         Scanner reader=new Scanner(formula1File);
         while(reader.hasNext()){
             String fileContent = reader.nextLine();
-            String[] playerInfoArray = fileContent.split(" ");
-            updateSystem(playerInfoArray[0], playerInfoArray[1],playerInfoArray[2],playerInfoArray[3],playerInfoArray[4],playerInfoArray[5],
-                    playerInfoArray[6],playerInfoArray[7]);
+            String[] driverInfoArray = fileContent.split(" ");
+            updateSystemDriverInfo(driverInfoArray[0], driverInfoArray[1],driverInfoArray[2],driverInfoArray[3],driverInfoArray[4],driverInfoArray[5],
+                    driverInfoArray[6],driverInfoArray[7]);
+        }
+        FileInputStream formula1File2=new FileInputStream("raceInformation.txt");
+        while(reader.hasNext()){
+            String fileContent = reader.nextLine();
+            String[] raceInfoArray = fileContent.split(" ");
+            updateSystemRaceInfo(raceInfoArray[0], raceInfoArray[1],raceInfoArray[2],raceInfoArray[3],raceInfoArray[4]);
         }
     }
 
-    public void updateSystem(String name, String location, String team, String fP, String sP, String tP, String totPoints, String totRaces) {
+    public void getSavedInfoRace() throws FileNotFoundException {
+        FileInputStream formula1File2=new FileInputStream("raceInformation.txt");
+        Scanner reader=new Scanner(formula1File2);
+
+        while(reader.hasNext()){
+            String fileContent = reader.nextLine();
+            String[] raceInfoArray = fileContent.split(" ");
+            updateSystemRaceInfo(raceInfoArray[0], raceInfoArray[1],raceInfoArray[2],raceInfoArray[3],raceInfoArray[4]);
+        }
+    }
+
+    public void updateSystemDriverInfo(String name, String location, String team, String fP, String sP, String tP, String totPoints, String totRaces) {
         Formula1Driver f1=new Formula1Driver();
         f1.setName(name);
         f1.setLocation(location);
@@ -306,6 +338,16 @@ public class Formula1ChampionshipManager implements ChampionshipManager{
         f1.setNumberOfRaces(Integer.parseInt(totRaces));
 
         driverList.add(f1);
+    }
+    public void updateSystemRaceInfo(String raceName,String raceDate,String fP,String sP,String tP){
+        Race r1=new Race();
+        r1.setRaceName(raceName);
+        r1.setRaceDate(raceDate);
+        r1.setFirstPlace(fP);
+        r1.setSecondPlace(sP);
+        r1.setThirdPlace(tP);
+
+        raceInfo.add(r1);
     }
 
     // ------Method for Graphical user interface section-------
@@ -380,10 +422,6 @@ public class Formula1ChampionshipManager implements ChampionshipManager{
                 for(int x=0;x<10;x++){
                     randomRaceWinners[x]=driverList.get(randomDrivers.get(x)).getName();
                 }
-
-//                System.out.println(("\n\n---Random Race results---"));
-
-//                    System.out.println("Position "+(x+1)+": "+driverList.get(randomDrivers.get(x)).getName());
                 JOptionPane.showMessageDialog(null,"Position 1:"+driverList.get(randomDrivers.get(0)).getName()+"\n"+
                         "Position 2:"+driverList.get(randomDrivers.get(1)).getName()+"\n"+
                         "Position 3:"+driverList.get(randomDrivers.get(2)).getName()+"\n"+
@@ -395,8 +433,11 @@ public class Formula1ChampionshipManager implements ChampionshipManager{
                         "Position 9:"+driverList.get(randomDrivers.get(8)).getName()+"\n"+
                         "Position 10:"+driverList.get(randomDrivers.get(9)).getName());
 
-
-                System.out.println("");
+                System.out.println("\n----Race Results Sheet----\n");
+                for(int x=0;x< 10;x++){
+                    System.out.print("Position "+(x+1)+": "+driverList.get(randomDrivers.get(x)).getName()+"\n");
+                }
+                System.out.println("------------\nEnter your choice?");
                 addRaceResult(randomRaceWinners,dateOfRace,nameOfRace,driverList.get(randomDrivers.get(0)).getName(),driverList.get(randomDrivers.get(1)).getName(),driverList.get(randomDrivers.get(2)).getName());
 
             }
@@ -410,12 +451,23 @@ public class Formula1ChampionshipManager implements ChampionshipManager{
                     randomRaceWinners[x]=driverList.get(randomDrivers.get(x)).getName();
                     System.out.println(randomDrivers.get(x));
                 }
-//                System.out.println(("---Random Race results---"));
-                for(int x=0;x<10;x++){
-                    JOptionPane.showMessageDialog(null,"Position "+(x+1)+": "+driverList.get(randomDrivers.get(x)).getName());
+                JOptionPane.showMessageDialog(null,"Position 1:"+driverList.get(randomDrivers.get(0)).getName()+"\n"+
+                        "Position 2:"+driverList.get(randomDrivers.get(1)).getName()+"\n"+
+                        "Position 3:"+driverList.get(randomDrivers.get(2)).getName()+"\n"+
+                        "Position 4:"+driverList.get(randomDrivers.get(3)).getName()+"\n"+
+                        "Position 5:"+driverList.get(randomDrivers.get(4)).getName()+"\n"+
+                        "Position 6:"+driverList.get(randomDrivers.get(5)).getName()+"\n"+
+                        "Position 7:"+driverList.get(randomDrivers.get(6)).getName()+"\n"+
+                        "Position 8:"+driverList.get(randomDrivers.get(7)).getName()+"\n"+
+                        "Position 9:"+driverList.get(randomDrivers.get(8)).getName()+"\n"+
+                        "Position 10:"+driverList.get(randomDrivers.get(9)).getName());
 
+                System.out.println("\n----Race Results Sheet----\n");
+                for(int x=0;x< 10;x++){
+                    System.out.print("Position: "+(x+1)+": "+driverList.get(randomDrivers.get(x)).getName()+"\n");
                 }
-                System.out.println("");
+                System.out.println("------------\nEnter your choice?");
+
                 addRaceResult(randomRaceWinners,dateOfRace,nameOfRace,driverList.get(randomDrivers.get(0)).getName(),driverList.get(randomDrivers.get(1)).getName(),driverList.get(randomDrivers.get(2)).getName());
 
             }

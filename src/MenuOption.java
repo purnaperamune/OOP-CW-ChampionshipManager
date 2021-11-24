@@ -1,12 +1,14 @@
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Random;
 import java.util.Scanner;
 
 public class MenuOption {
      public static void menu() throws FileNotFoundException {
         Scanner input=new Scanner(System.in);
+         Formula1ChampionshipManager formula1ChampionshipManager=new Formula1ChampionshipManager();
+         formula1ChampionshipManager.getSavedInfoDriver();
+         formula1ChampionshipManager.getSavedInfoRace();
         String exitProgram="d";
         while (exitProgram!="EXT"){
             System.out.println("    ------------------Menu Options------------------\n" +
@@ -16,8 +18,7 @@ public class MenuOption {
                     "    Display a driver information-------------------4\n"+
                     "    Display Formula1 driver table------------------5\n"+
                     "    Add results of a new race----------------------6\n"+
-                    "    Update the system with past results------------7\n"+
-                    "    Open GUI---------------------------------------8\n"+
+                    "    Open GUI---------------------------------------7\n"+
                     "    Exit the Formula1 Championship Manager---------EXT\n");
 
             System.out.print("Enter your choice : ");
@@ -46,23 +47,15 @@ public class MenuOption {
                     addRaceResult();
                     break;
                 case "7":
-                    Formula1ChampionshipManager formula1ChampionshipManager=new Formula1ChampionshipManager();
-                    formula1ChampionshipManager.getSavedInfo();
-                    System.out.println("System updated successfully!\n");
-                    break;
-                case "8":
                     PointsTableGUI gui = new PointsTableGUI();
                     gui.setVisible(true);
                     break;
 
-                case "9":
-                    Formula1ChampionshipManager formula1ChampionshipManager1=new Formula1ChampionshipManager();
-                    formula1ChampionshipManager1.randomRace();
+                case "8":
+                    formula1ChampionshipManager.randomRace();
                     break;
-                case "10":
-                    Formula1ChampionshipManager formula1ChampionshipManager2 =new Formula1ChampionshipManager();
-                    formula1ChampionshipManager2.sortByDate();
-
+                case "9":
+                    formula1ChampionshipManager.sortByDate();
                     break;
                 case "EXT":
                     exitProgram = "EXT";
@@ -202,7 +195,7 @@ public class MenuOption {
     public static void saveToFile()  {
         Formula1ChampionshipManager formula1ChampionshipManager=new Formula1ChampionshipManager();
         try {
-            formula1ChampionshipManager.saveToFile();
+            formula1ChampionshipManager.saveToFileDriverInfo();
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -215,8 +208,6 @@ public class MenuOption {
         System.out.print("\n");
 
          menu();
-
-
 
     }
 }

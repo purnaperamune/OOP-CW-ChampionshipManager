@@ -13,6 +13,10 @@ public class Race {
         this.thirdPlace=thirdPlace;
     }
 
+    public Race() {
+
+    }
+
     public String getRaceName() {
         return raceName;
     }
