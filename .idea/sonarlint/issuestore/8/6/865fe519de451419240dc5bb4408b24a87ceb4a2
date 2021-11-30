@@ -1,78 +1,79 @@
 
 E
-java:S3740J"/Provide the parametrized type for this generic.(é¢¬Ù
+java:S3740H"/Provide the parametrized type for this generic.(é¢¬Ù
 E
-java:S3740J"/Provide the parametrized type for this generic.(é¢¬Ù
+java:S3740H"/Provide the parametrized type for this generic.(é¢¬Ù
 F
-java:S3740‡"/Provide the parametrized type for this generic.(é¢¬Ù
+java:S3740…"/Provide the parametrized type for this generic.(é¢¬Ù
 F
-java:S3740‡"/Provide the parametrized type for this generic.(é¢¬Ù
+java:S3740…"/Provide the parametrized type for this generic.(é¢¬Ù
 F
-java:S3740œ"/Provide the parametrized type for this generic.(é¢¬Ù
+java:S3740š"/Provide the parametrized type for this generic.(é¢¬Ù
 F
-java:S3740œ"/Provide the parametrized type for this generic.(é¢¬Ù
-N	java:S106"9Replace this use of System.out or System.err by a logger.(Ğû¶Î
-N	java:S106"9Replace this use of System.out or System.err by a logger.(•éõ«
-P
-java:S2209:"5Change this instance-reference to a static reference.(Òşçøûÿÿÿÿ
-N	java:S106>"9Replace this use of System.out or System.err by a logger.(‹Å½Ö
-N	java:S106A"9Replace this use of System.out or System.err by a logger.(™Û£¿
+java:S3740š"/Provide the parametrized type for this generic.(é¢¬Ù
+N	java:S106"9Replace this use of System.out or System.err by a logger.(Ğû¶Î
+N	java:S106"9Replace this use of System.out or System.err by a logger.(•éõ«
+W
+java:S22098"5Change this instance-reference to a static reference.(Òşçøûÿÿÿÿ8ÕïŸ×/
+N	java:S106<"9Replace this use of System.out or System.err by a logger.(‹Å½Ö
+N	java:S106?"9Replace this use of System.out or System.err by a logger.(™Û£¿
 R
-java:S1854J"<Remove this useless assignment to local variable "nameList".(é¢¬Ù
-S	java:S106N"9Replace this use of System.out or System.err by a logger.(Üìúóûÿÿÿÿ
-N	java:S106Q"9Replace this use of System.out or System.err by a logger.(å™ˆã
-S	java:S106T"9Replace this use of System.out or System.err by a logger.(İÃĞĞøÿÿÿÿ
-S	java:S106X"9Replace this use of System.out or System.err by a logger.(¤¬½†üÿÿÿÿ
-S	java:S106Z"9Replace this use of System.out or System.err by a logger.(Òí£Úûÿÿÿÿ
-M	java:S106\"9Replace this use of System.out or System.err by a logger.(ßñô
-N	java:S106^"9Replace this use of System.out or System.err by a logger.(­Ïµ
-S	java:S106`"9Replace this use of System.out or System.err by a logger.(İ¿Èºşÿÿÿÿ
-N	java:S106b"9Replace this use of System.out or System.err by a logger.(ßÍÉ
-S	java:S106d"9Replace this use of System.out or System.err by a logger.(ë‰¶ìüÿÿÿÿ
+java:S1854H"<Remove this useless assignment to local variable "nameList".(é¢¬Ù
+S	java:S106L"9Replace this use of System.out or System.err by a logger.(Üìúóûÿÿÿÿ
+N	java:S106O"9Replace this use of System.out or System.err by a logger.(å™ˆã
+S	java:S106R"9Replace this use of System.out or System.err by a logger.(İÃĞĞøÿÿÿÿ
+S	java:S106V"9Replace this use of System.out or System.err by a logger.(¤¬½†üÿÿÿÿ
+S	java:S106X"9Replace this use of System.out or System.err by a logger.(Òí£Úûÿÿÿÿ
+M	java:S106Z"9Replace this use of System.out or System.err by a logger.(ßñô
+N	java:S106\"9Replace this use of System.out or System.err by a logger.(­Ïµ
+S	java:S106^"9Replace this use of System.out or System.err by a logger.(İ¿Èºşÿÿÿÿ
+N	java:S106`"9Replace this use of System.out or System.err by a logger.(ßÍÉ
+S	java:S106b"9Replace this use of System.out or System.err by a logger.(ë‰¶ìüÿÿÿÿ
 T
-java:S1854m"9Remove this useless assignment to local variable "input".(Úî¿òøÿÿÿÿ
+java:S1854k"9Remove this useless assignment to local variable "input".(Úî¿òøÿÿÿÿ
 E
-java:S1481m"*Remove this unused "input" local variable.(Úî¿òøÿÿÿÿ
-K
-java:S2209o"5Change this instance-reference to a static reference.(×˜á¦
-N	java:S106p"9Replace this use of System.out or System.err by a logger.(“—´
-K
-java:S2209x"5Change this instance-reference to a static reference.(×˜á¦
-S	java:S106y"9Replace this use of System.out or System.err by a logger.(¸ ıÿÿÿÿ
+java:S1481k"*Remove this unused "input" local variable.(Úî¿òøÿÿÿÿ
+R
+java:S2209m"5Change this instance-reference to a static reference.(×˜á¦8éïŸ×/
+N	java:S106n"9Replace this use of System.out or System.err by a logger.(“—´
+R
+java:S2209v"5Change this instance-reference to a static reference.(×˜á¦8îïŸ×/
+S	java:S106w"9Replace this use of System.out or System.err by a logger.(¸ ıÿÿÿÿ
 S
-java:S1854‡"<Remove this useless assignment to local variable "nameList".(é¢¬Ù
-L
-java:S2209ƒ"5Change this instance-reference to a static reference.(×˜á¦
-T	java:S106„"9Replace this use of System.out or System.err by a logger.(¸ ıÿÿÿÿ
-O	java:S106Œ"9Replace this use of System.out or System.err by a logger.(ÏÚÚÕ
-T	java:S106"9Replace this use of System.out or System.err by a logger.(·¤í¯ÿÿÿÿÿ
+java:S1854…"<Remove this useless assignment to local variable "nameList".(é¢¬Ù
 S
-java:S1854œ"<Remove this useless assignment to local variable "nameList".(é¢¬Ù
-T	java:S106¢"9Replace this use of System.out or System.err by a logger.(²çÍúÿÿÿÿ
-O	java:S106¥"9Replace this use of System.out or System.err by a logger.(÷¼Å
-O	java:S106ª"9Replace this use of System.out or System.err by a logger.(µüä”
-T	java:S106¬"9Replace this use of System.out or System.err by a logger.(©¡¤ßşÿÿÿÿ
+java:S2209"5Change this instance-reference to a static reference.(×˜á¦8òïŸ×/
+T	java:S106‚"9Replace this use of System.out or System.err by a logger.(¸ ıÿÿÿÿ
+O	java:S106Š"9Replace this use of System.out or System.err by a logger.(ÏÚÚÕ
+T	java:S106"9Replace this use of System.out or System.err by a logger.(·¤í¯ÿÿÿÿÿ
+S
+java:S1854š"<Remove this useless assignment to local variable "nameList".(é¢¬Ù
+T	java:S106 "9Replace this use of System.out or System.err by a logger.(²çÍúÿÿÿÿ
+O	java:S106£"9Replace this use of System.out or System.err by a logger.(÷¼Å
+O	java:S106¦"9Replace this use of System.out or System.err by a logger.(µüä”
+T	java:S106¨"9Replace this use of System.out or System.err by a logger.(©¡¤ßşÿÿÿÿ
+T	java:S106¬"9Replace this use of System.out or System.err by a logger.(ÿÁêÅüÿÿÿÿ
 T	java:S106°"9Replace this use of System.out or System.err by a logger.(ÿÁêÅüÿÿÿÿ
-T	java:S106´"9Replace this use of System.out or System.err by a logger.(ÿÁêÅüÿÿÿÿ
-T	java:S106µ"9Replace this use of System.out or System.err by a logger.(Š·‡ıÿÿÿÿ
-T	java:S106¸"9Replace this use of System.out or System.err by a logger.(ƒÇãˆúÿÿÿÿ
-T	java:S106¹"9Replace this use of System.out or System.err by a logger.(ÿÁêÅüÿÿÿÿ
-O	java:S106»"9Replace this use of System.out or System.err by a logger.(‚áĞ
-N	java:S106¼"9Replace this use of System.out or System.err by a logger.(—ûïM
-O	java:S106À"9Replace this use of System.out or System.err by a logger.(ÀÂ‘Œ
-O	java:S106Í"9Replace this use of System.out or System.err by a logger.(ï¾
-O	java:S106Î"9Replace this use of System.out or System.err by a logger.( É
-O	java:S106Ï"9Replace this use of System.out or System.err by a logger.(ï¾
-N	java:S106Ğ"9Replace this use of System.out or System.err by a logger.(°•Ş
-T
-java:S1155o">Use isEmpty() to check whether the collection is empty or not.(×˜á¦
-T
-java:S1155x">Use isEmpty() to check whether the collection is empty or not.(×˜á¦
-U
-java:S1155ƒ">Use isEmpty() to check whether the collection is empty or not.(×˜á¦
+T	java:S106±"9Replace this use of System.out or System.err by a logger.(Š·‡ıÿÿÿÿ
+T	java:S106´"9Replace this use of System.out or System.err by a logger.(ƒÇãˆúÿÿÿÿ
+T	java:S106µ"9Replace this use of System.out or System.err by a logger.(ÿÁêÅüÿÿÿÿ
+O	java:S106·"9Replace this use of System.out or System.err by a logger.(‚áĞ
+N	java:S106¸"9Replace this use of System.out or System.err by a logger.(—ûïM
+O	java:S106¼"9Replace this use of System.out or System.err by a logger.(ÀÂ‘Œ
+Y	java:S125¿"<This block of commented-out lines of code should be removed.(¦ÀÓÿ8»ŠéŒ×/
+O	java:S106Ê"9Replace this use of System.out or System.err by a logger.(ï¾
+O	java:S106Ë"9Replace this use of System.out or System.err by a logger.( É
+O	java:S106Ì"9Replace this use of System.out or System.err by a logger.(ï¾
+N	java:S106Í"9Replace this use of System.out or System.err by a logger.(°•Ş
+v
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(ªº»Úıÿÿÿÿ8ŠğŸ×/
+[
+java:S1155m">Use isEmpty() to check whether the collection is empty or not.(×˜á¦8‹ğŸ×/
+[
+java:S1155v">Use isEmpty() to check whether the collection is empty or not.(×˜á¦8ŒğŸ×/
+\
+java:S1155">Use isEmpty() to check whether the collection is empty or not.(×˜á¦8ŒğŸ×/
 O
-java:S4973"9Use the "equals" method if value comparison was intended.(á›™Û
-O
-java:S4973"9Use the "equals" method if value comparison was intended.(£€Ñ—
-0
-java:S1220""Move this file to a named package.
+java:S4973"9Use the "equals" method if value comparison was intended.(á›™Û
+7
+java:S1220""Move this file to a named package.8çŠ“×/

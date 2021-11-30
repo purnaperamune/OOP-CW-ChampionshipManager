@@ -1,5 +1,6 @@
 import java.util.Comparator;
 
+//Compares the total number of points
 public class ComparePoints implements Comparator<Formula1Driver> {
     @Override
     public int compare(Formula1Driver driver1, Formula1Driver driver2) {

@@ -1,42 +1,58 @@
 
+r
+java:S1854"ORemove this useless assignment to local variable "formula1ChampionshipManager".(ñ‚´üÿÿÿÿ8éá–×/
+c
+java:S1481"@Remove this unused "formula1ChampionshipManager" local variable.(ñ‚´üÿÿÿÿ8êá–×/
 T
-java:S1197‡"8Move the array designator from the variable to the type.(¡şÏÖøÿÿÿÿ
+java:S1197¾"8Move the array designator from the variable to the type.(¡şÏÖøÿÿÿÿ
 q
-java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(ï´µ©8®ÂæÔ/
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(ï´µ©8şÜŸ×/
+q
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(÷‰îƒ8ÿÜŸ×/
 v
-java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(ÒÜÅ¸úÿÿÿÿ8®ÂæÔ/
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(ÒÜÅ¸úÿÿÿÿ8€İŸ×/
 C
-java:S1604?"(Make this anonymous inner class a lambda(®¨ëåúÿÿÿÿ
+java:S1604W"(Make this anonymous inner class a lambda(®¨ëåúÿÿÿÿ
 C
-java:S1604G"(Make this anonymous inner class a lambda(»Ş›ûÿÿÿÿ
+java:S1604`"(Make this anonymous inner class a lambda(»Ş›ûÿÿÿÿ
 >
-java:S1604O"(Make this anonymous inner class a lambda(õ„«î
+java:S1604i"(Make this anonymous inner class a lambda(õ„«î
 C
-java:S1604W"(Make this anonymous inner class a lambda(ÂæÃ‰üÿÿÿÿ
-C
-java:S1604h"(Make this anonymous inner class a lambda(ñá×Îûÿÿÿÿ
+java:S1604r"(Make this anonymous inner class a lambda(ÂæÃ‰üÿÿÿÿ
+D
+java:S1604‚"(Make this anonymous inner class a lambda(ñá×Îûÿÿÿÿ
+D
+java:S1604‹"(Make this anonymous inner class a lambda(Á¼úóùÿÿÿÿ
 o
-java:S1104
-"TMake topPanel a static final constant or non-public and provide accessors if needed.(Û¾âşÿÿÿÿ
+java:S1104"TMake topPanel a static final constant or non-public and provide accessors if needed.(Û¾âşÿÿÿÿ
 l
-java:S1104"QMake table a static final constant or non-public and provide accessors if needed.(¡øñ™úÿÿÿÿ
+java:S1104"QMake table a static final constant or non-public and provide accessors if needed.(¡øñ™úÿÿÿÿ
 l
-java:S1104"VMake scrollPane a static final constant or non-public and provide accessors if needed.(Å¦€
+java:S1104"VMake scrollPane a static final constant or non-public and provide accessors if needed.(Å¦€
 m
-java:S1104"WMake tableHeader a static final constant or non-public and provide accessors if needed.(ôûçû
+java:S1104"WMake tableHeader a static final constant or non-public and provide accessors if needed.(ôûçû
 u
-java:S1104"_Make tableHeaderRaceInfo a static final constant or non-public and provide accessors if needed.(Üˆêç
+java:S1104"_Make tableHeaderRaceInfo a static final constant or non-public and provide accessors if needed.(Üˆêç
+€
+java:S1104"eMake tableHeaderSearchRaceInfo a static final constant or non-public and provide accessors if needed.(ÓÖ„âşÿÿÿÿ
 v
-java:S1104"`Make driverStatDescending a static final constant or non-public and provide accessors if needed.(†Áç
+java:S1104"`Make driverStatDescending a static final constant or non-public and provide accessors if needed.(†Áç
 z
-java:S1104"_Make driverStatAscending a static final constant or non-public and provide accessors if needed.(Í¨¯Âıÿÿÿÿ
+java:S1104"_Make driverStatAscending a static final constant or non-public and provide accessors if needed.(Í¨¯Âıÿÿÿÿ
 t
-java:S1104"^Make driverStatPosition a static final constant or non-public and provide accessors if needed.(‘Úëù
+java:S1104"^Make driverStatPosition a static final constant or non-public and provide accessors if needed.(‘Úëù
 i
-java:S1104"TMake raceInfo a static final constant or non-public and provide accessors if needed.(‹ì“Y
-b	java:S101q"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ÁÚÁ’
-b	java:S101v"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Îä°
-g	java:S101{"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(¹ÿüÓùÿÿÿÿ
-c	java:S101€"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Û‰ëÌ
-0
-java:S1220""Move this file to a named package.
+java:S1104"TMake raceInfo a static final constant or non-public and provide accessors if needed.(‹ì“Y
+p
+java:S1104"ZMake searchRaceInfo a static final constant or non-public and provide accessors if needed.(‚¬úê
+k
+java:S1104 "UMake searchBar a static final constant or non-public and provide accessors if needed.(€‚á€
+E
+java:S1444 "/Make this "public static searchBar" field final(€‚á€
+c	java:S101›"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ÁÚÁ’
+c	java:S101¢"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Îä°
+h	java:S101©"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(¹ÿüÓùÿÿÿÿ
+c	java:S101°"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Û‰ëÌ
+c	java:S101·"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Å¤ò
+7
+java:S1220""Move this file to a named package.8ã“×/

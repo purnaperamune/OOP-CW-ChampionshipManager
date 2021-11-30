@@ -1,3 +1,6 @@
+/* This is an abstract class and
+child class of this class is Formula1Driver
+ */
 public abstract class Driver {
     String name;
     String location;

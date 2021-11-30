@@ -1,5 +1,6 @@
 import java.util.Comparator;
 
+//Compares the number of first positions each driver has got
 public class CompareFirstPosition implements Comparator<Formula1Driver> {
     @Override
     public int compare(Formula1Driver driver1, Formula1Driver driver2) {

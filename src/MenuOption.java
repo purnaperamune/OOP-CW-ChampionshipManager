@@ -7,9 +7,12 @@ public class MenuOption {
      public static void menu() throws FileNotFoundException {
         Scanner input=new Scanner(System.in);
          Formula1ChampionshipManager formula1ChampionshipManager=new Formula1ChampionshipManager();
+
+         //Getting saved information in files into the system
          formula1ChampionshipManager.getSavedInfoDriver();
          formula1ChampionshipManager.getSavedInfoRace();
-        String exitProgram="d";
+
+        String exitProgram=""; //Variable to exit from the system
         while (exitProgram!="EXT"){
             System.out.println("    ------------------Menu Options------------------\n" +
                     "    Add a new driver-------------------------------1\n" +
@@ -23,10 +26,6 @@ public class MenuOption {
 
             System.out.print("Enter your choice : ");
             String userInput = input.next();
-            if(userInput=="G"){
-                PointsTableGUI gui = new PointsTableGUI();
-                gui.setVisible(true);
-            }
             switch (userInput) {
                 case "1":
                     createDriver();
@@ -50,7 +49,6 @@ public class MenuOption {
                     PointsTableGUI gui = new PointsTableGUI();
                     gui.setVisible(true);
                     break;
-
                 case "8":
                     formula1ChampionshipManager.randomRace();
                     break;
@@ -165,8 +163,6 @@ public class MenuOption {
         System.out.println("Enter date of the race?");
         dateOfRace=input.next();
 
-
-
         System.out.println("-----Adding Race Results-----");
         String []placesList=new String[10];
         System.out.println("Enter first 10 places one by one to update the points table");
@@ -192,15 +188,16 @@ public class MenuOption {
         System.out.println("Race results successfully added to the points table!\n");
     }
 
-    public static void saveToFile()  {
-        Formula1ChampionshipManager formula1ChampionshipManager=new Formula1ChampionshipManager();
-        try {
-            formula1ChampionshipManager.saveToFileDriverInfo();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
+//    public static void saveToFile()  {
+//        Formula1ChampionshipManager formula1ChampionshipManager=new Formula1ChampionshipManager();
+//        try {
+//            formula1ChampionshipManager.saveToFileDriverInfo();
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+//    }
 
+    //Execution of the program starts from here
     public static void main(String[] args) throws FileNotFoundException {
         System.out.println("-------------------------------------------------------------");
         System.out.println("--------Welcome to the Formula1 Championship Manager!--------");
@@ -208,7 +205,6 @@ public class MenuOption {
         System.out.print("\n");
 
          menu();
-
     }
 }
 
