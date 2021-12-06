@@ -8,17 +8,17 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class PointsTableGUI extends JFrame {
-    public JPanel topPanel;
-    public JTable table;
-    public JScrollPane scrollPane;
-    public String[] tableHeader = new String[3];
-    public String[] tableHeaderRaceInfo = new String[2];
-    public String[] tableHeaderSearchRaceInfo;
-    public String[][] driverStatDescending = new String[9][3];
-    public String[][] driverStatAscending = new String[9][3];
-    public String[][] driverStatPosition = new String[9][3];
-    public String[][] raceInfo = new String[2][5];
-    public String[][] searchRaceInfo ;
+    private JPanel topPanel;
+    private JTable table;
+    private JScrollPane scrollPane;
+    private String[] tableHeader = new String[3];
+    private String[] tableHeaderRaceInfo = new String[2];
+    private String[] tableHeaderSearchRaceInfo;
+    private String[][] driverStatDescending = new String[9][3];
+    private String[][] driverStatAscending = new String[9][3];
+    private String[][] driverStatPosition = new String[9][3];
+    private String[][] raceInfo = new String[2][5];
+    private String[][] searchRaceInfo ;
 
 
     /* Declaration of buttons in the GUI */
@@ -28,14 +28,15 @@ public class PointsTableGUI extends JFrame {
     JButton btnRandomRace= new JButton("Random Race");
     JButton btnSortByDate= new JButton("Sort Race - Date");
     JButton btnProbabilityRace= new JButton("Race - Probability");
-    JButton btnSearch= new JButton("Search");
+    JButton btnSearch= new JButton("Search Driver");
     public static JTextField searchBar = new JTextField(20);
 
 
     public PointsTableGUI() {
         setTitle("Formula1 Championship-Points Table");
         setSize(1040, 670);
-        setDefaultCloseOperation(EXIT_ON_CLOSE);
+//        setDefaultCloseOperation(EXIT_ON_CLOSE);  I have commented this so when I close the GUI,
+//        the program in the CLI will not terminate.
 
 
         /* Declaration of the place of buttons and the textfield */
@@ -69,6 +70,9 @@ public class PointsTableGUI extends JFrame {
         scrollPane = new JScrollPane(table);
         scrollPane.setBounds(20,20,1000,200);
 
+        scrollPane.setBackground(Color.red);
+        topPanel.setBackground(Color.darkGray);
+
         /* Adding buttons to the GUI */
         topPanel.add(scrollPane);
         topPanel.add(btnPointsDescendingOrder);
@@ -79,7 +83,6 @@ public class PointsTableGUI extends JFrame {
         topPanel.add(btnProbabilityRace);
         topPanel.add(searchBar);
         topPanel.add(btnSearch);
-
 
         /* Adding actions to buttons in the GUI */
 

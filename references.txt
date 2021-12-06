@@ -1,0 +1,5 @@
+In the CLI part, I went through this link to get an idea about how string format method works in Java (https://www.geeksforgeeks.org/java-string-format-method-with-examples/).
+
+
+To create table in the GUI part, I went through this code(http://www.java2s.com/Code/Java/Swing-JFC/extendsDefaultTableModeltocreateyourowntablemodelandbuildtablefromthat.htm) additional to university lecture slides. 
+

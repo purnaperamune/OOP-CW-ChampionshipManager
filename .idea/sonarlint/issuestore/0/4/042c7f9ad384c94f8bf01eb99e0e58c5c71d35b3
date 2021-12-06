@@ -11,24 +11,22 @@ E
 java:S3740`"/Provide the parametrized type for this generic.(é¢¬Ù
 E
 java:S3740`"/Provide the parametrized type for this generic.(é¢¬Ù
-F
-java:S3740¡"/Provide the parametrized type for this generic.(é¢¬Ù
-F
-java:S3740¡"/Provide the parametrized type for this generic.(é¢¬Ù
 K
-java:S3740“"/Provide the parametrized type for this generic.(„ô÷şÿÿÿÿ
+java:S3740Ÿ"/Provide the parametrized type for this generic.(’¦ÌÃúÿÿÿÿ
+K
+java:S3740’"/Provide the parametrized type for this generic.(„ô÷şÿÿÿÿ
 E
-java:S3740‰"/Provide the parametrized type for this generic.(ßÛíR
+java:S3740€"/Provide the parametrized type for this generic.(ßÛíR
 F
-java:S3740Š"/Provide the parametrized type for this generic.(ˆ‰ĞÔ
+java:S3740"/Provide the parametrized type for this generic.(ˆ‰ĞÔ
 E
-java:S3740‹"/Provide the parametrized type for this generic.(™ñÀX
+java:S3740‚"/Provide the parametrized type for this generic.(™ñÀX
 F
-java:S3740Œ"/Provide the parametrized type for this generic.(”¿ûÙ
+java:S3740ƒ"/Provide the parametrized type for this generic.(”¿ûÙ
 t
-java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(¥Õµèúÿÿÿÿ
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(©ãıÿÿÿÿ
 t
-java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(à³ˆÁûÿÿÿÿ
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ê±ğùÿÿÿÿ
 N	java:S106"9Replace this use of System.out or System.err by a logger.(–“­í
 S	java:S106"9Replace this use of System.out or System.err by a logger.(œ¸—Ÿûÿÿÿÿ
 S	java:S106"9Replace this use of System.out or System.err by a logger.(ƒÇãˆúÿÿÿÿ
@@ -56,104 +54,79 @@ N	java:S106"9Replace this use of System.out or System.err by a logger.(°•Ş
 T	java:S106"9Replace this use of System.out or System.err by a logger.(ƒÇãˆúÿÿÿÿ
 h
 java:S3776–"RRefactor this method to reduce its Cognitive Complexity from 34 to the 15 allowed.(óèñ
-S
-java:S1854¡"<Remove this useless assignment to local variable "nameList".(é¢¬Ù
-Y
-java:S1854—"BRemove this useless assignment to local variable "formula1Driver".(¬›ù 
 I
-java:S1659¤"-Declare "secondPositions" on a separate line.(ŒùëÄúÿÿÿÿ
+java:S1659¢"-Declare "secondPositions" on a separate line.(ŒùëÄúÿÿÿÿ
 H
-java:S1659¤",Declare "thirdPositions" on a separate line.(ŒùëÄúÿÿÿÿ
-J
-java:S1481—"3Remove this unused "formula1Driver" local variable.(¬›ù 
-8	java:S131ª""Add a default case to this switch.(ŒÂœÊ
-I
-java:S1659”"-Declare "secondPositions" on a separate line.(ŒùëÄúÿÿÿÿ
-H
-java:S1659”",Declare "thirdPositions" on a separate line.(ŒùëÄúÿÿÿÿ
-O
-java:S1481”"3Remove this unused "firstPositions" local variable.(ŒùëÄúÿÿÿÿ
-P
-java:S1481”"4Remove this unused "secondPositions" local variable.(ŒùëÄúÿÿÿÿ
-O
-java:S1481”"3Remove this unused "thirdPositions" local variable.(ŒùëÄúÿÿÿÿ
+java:S1659¢",Declare "thirdPositions" on a separate line.(ŒùëÄúÿÿÿÿ
+8	java:S131¨""Add a default case to this switch.(ŒÂœÊ
 [
-java:S1117¤"?Rename "formula1File" which hides the field declared at line 9.(‹Êõ…ûÿÿÿÿ
-T	java:S106±"9Replace this use of System.out or System.err by a logger.(ŞÒ—üÿÿÿÿ
+java:S1117¢"?Rename "formula1File" which hides the field declared at line 9.(‹Êõ…ûÿÿÿÿ
+T	java:S106¯"9Replace this use of System.out or System.err by a logger.(ŞÒ—üÿÿÿÿ
 [
-java:S1117¶"?Rename "formula1File" which hides the field declared at line 9.(’İõûÿÿÿÿ
-T	java:S106À"9Replace this use of System.out or System.err by a logger.(ŞÒ—üÿÿÿÿ
+java:S1117´"?Rename "formula1File" which hides the field declared at line 9.(’İõûÿÿÿÿ
+T	java:S106¾"9Replace this use of System.out or System.err by a logger.(ŞÒ—üÿÿÿÿ
 [
-java:S1117Å"?Rename "formula1File" which hides the field declared at line 9.(«‘Î¯ıÿÿÿÿ
-^	java:S125Í"<This block of commented-out lines of code should be removed.(Å¢°üÿÿÿÿ8¾áÒ×/
+java:S1117Ã"?Rename "formula1File" which hides the field declared at line 9.(«‘Î¯ıÿÿÿÿ
 ]
-java:S1117×"ARename "formula1File2" which hides the field declared at line 10.(¸ùÉáüÿÿÿÿ
-S
-java:S1854"<Remove this useless assignment to local variable "statType".(Àôóí
-O
-java:S1854"8Remove this useless assignment to local variable "type".(áÄñ
+java:S1117Ï"ARename "formula1File2" which hides the field declared at line 10.(¸ùÉáüÿÿÿÿ
 n
-java:S3776¹"RRefactor this method to reduce its Cognitive Complexity from 23 to the 15 allowed.(Õ Ğÿÿÿÿÿ
-U
-java:S1854»"9Remove this useless assignment to local variable "input".(Úî¿òøÿÿÿÿ
+java:S3776±"RRefactor this method to reduce its Cognitive Complexity from 23 to the 15 allowed.(Õ Ğÿÿÿÿÿ
 p
-java:S2293º"YReplace the type specification in this constructor call with the diamond operator ("<>").(·ç˜Ì
-F
-java:S1481»"*Remove this unused "input" local variable.(Úî¿òøÿÿÿÿ
-T	java:S106Â"9Replace this use of System.out or System.err by a logger.(úğ¦ÿûÿÿÿÿ
-T	java:S106Ü"9Replace this use of System.out or System.err by a logger.(¢ÇÉÿÿÿÿÿ
-T	java:S106Ş"9Replace this use of System.out or System.err by a logger.(·é‚Ñúÿÿÿÿ
-T	java:S106à"9Replace this use of System.out or System.err by a logger.(ú¹ê³ıÿÿÿÿ
-O	java:S106ì"9Replace this use of System.out or System.err by a logger.(Ò¯½Ù
-T	java:S106ù"9Replace this use of System.out or System.err by a logger.(¢ÇÉÿÿÿÿÿ
-T	java:S106û"9Replace this use of System.out or System.err by a logger.(†˜Ôıÿÿÿÿ
-T	java:S106ı"9Replace this use of System.out or System.err by a logger.(ú¹ê³ıÿÿÿÿ
-O	java:S106•"9Replace this use of System.out or System.err by a logger.(ÅÍ¡¹
-T	java:S106™"9Replace this use of System.out or System.err by a logger.(†Ø ïıÿÿÿÿ
-T	java:S106›"9Replace this use of System.out or System.err by a logger.(†·§ÿÿÿÿÿ
-O	java:S106¬"9Replace this use of System.out or System.err by a logger.(áÃ¶ 
-T	java:S106¯"9Replace this use of System.out or System.err by a logger.(†·§ÿÿÿÿÿ
-O	java:S106¿"9Replace this use of System.out or System.err by a logger.(áÃ¶ 
-O	java:S106Í"9Replace this use of System.out or System.err by a logger.(¡Ñ‰
+java:S2293²"YReplace the type specification in this constructor call with the diamond operator ("<>").(·ç˜Ì
+T	java:S106¹"9Replace this use of System.out or System.err by a logger.(úğ¦ÿûÿÿÿÿ
+T	java:S106Ó"9Replace this use of System.out or System.err by a logger.(¢ÇÉÿÿÿÿÿ
+T	java:S106Õ"9Replace this use of System.out or System.err by a logger.(·é‚Ñúÿÿÿÿ
+T	java:S106×"9Replace this use of System.out or System.err by a logger.(ú¹ê³ıÿÿÿÿ
+O	java:S106ã"9Replace this use of System.out or System.err by a logger.(Ò¯½Ù
+T	java:S106ğ"9Replace this use of System.out or System.err by a logger.(¢ÇÉÿÿÿÿÿ
+T	java:S106ò"9Replace this use of System.out or System.err by a logger.(†˜Ôıÿÿÿÿ
+T	java:S106ô"9Replace this use of System.out or System.err by a logger.(ú¹ê³ıÿÿÿÿ
+O	java:S106Œ"9Replace this use of System.out or System.err by a logger.(ÅÍ¡¹
+T	java:S106"9Replace this use of System.out or System.err by a logger.(†Ø ïıÿÿÿÿ
+T	java:S106’"9Replace this use of System.out or System.err by a logger.(†·§ÿÿÿÿÿ
+O	java:S106£"9Replace this use of System.out or System.err by a logger.(áÃ¶ 
+T	java:S106¦"9Replace this use of System.out or System.err by a logger.(†·§ÿÿÿÿÿ
+O	java:S106¶"9Replace this use of System.out or System.err by a logger.(áÃ¶ 
+O	java:S106Ä"9Replace this use of System.out or System.err by a logger.(¡Ñ‰
 o
 java:S1192
 "TDefine a constant instead of duplicating this literal "raceInformation.txt" 3 times.(³š“üÿÿÿÿ
 l
-java:S1192™"PDefine a constant instead of duplicating this literal "First Position:" 6 times.(†Ø ïıÿÿÿÿ
+java:S1192"PDefine a constant instead of duplicating this literal "First Position:" 6 times.(†Ø ïıÿÿÿÿ
 p
-java:S1192™"MDefine a constant instead of duplicating this literal "Driver Name:" 6 times.(†Ø ïıÿÿÿÿ8¾Œ“×/
+java:S1192"MDefine a constant instead of duplicating this literal "Driver Name:" 6 times.(†Ø ïıÿÿÿÿ8¾Œ“×/
 g
-java:S1192š"PDefine a constant instead of duplicating this literal "Third Position:" 6 times.(°–±»
+java:S1192‘"PDefine a constant instead of duplicating this literal "Third Position:" 6 times.(°–±»
 n
-java:S1192™"KDefine a constant instead of duplicating this literal "Race Date:" 6 times.(†Ø ïıÿÿÿÿ8¿Œ“×/
+java:S1192"KDefine a constant instead of duplicating this literal "Race Date:" 6 times.(†Ø ïıÿÿÿÿ8¿Œ“×/
 l
 java:S1192	"VDefine a constant instead of duplicating this literal "playerInformation.txt" 3 times.(•’Ä˜
 n
-java:S1192™"KDefine a constant instead of duplicating this literal "Race Name:" 6 times.(†Ø ïıÿÿÿÿ8¿Œ“×/
+java:S1192"KDefine a constant instead of duplicating this literal "Race Name:" 6 times.(†Ø ïıÿÿÿÿ8¿Œ“×/
 h
-java:S1192š"QDefine a constant instead of duplicating this literal "Second Position:" 6 times.(°–±»
+java:S1192‘"QDefine a constant instead of duplicating this literal "Second Position:" 6 times.(°–±»
 …
 java:S1319"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(¯¶êS
 
-java:S1319“"sThe type of the "nameList" object should be an interface such as "List" rather than the implementation "ArrayList".(„ô÷şÿÿÿÿ
-W	java:S107â"<Method has 8 parameters, which is greater than 7 authorized.(É¯·¡úÿÿÿÿ
+java:S1319’"sThe type of the "nameList" object should be an interface such as "List" rather than the implementation "ArrayList".(„ô÷şÿÿÿÿ
+W	java:S107Ú"<Method has 8 parameters, which is greater than 7 authorized.(É¯·¡úÿÿÿÿ
 †
-java:S1488"jImmediately return this expression instead of assigning it to the temporary variable "statArrayAscending".(¼ÒÙùûÿÿÿÿ
+java:S1488–"jImmediately return this expression instead of assigning it to the temporary variable "statArrayAscending".(¼ÒÙùûÿÿÿÿ
 †
-java:S1488¥"jImmediately return this expression instead of assigning it to the temporary variable "statArrayAscending".(¼ÒÙùûÿÿÿÿ
+java:S1488"jImmediately return this expression instead of assigning it to the temporary variable "statArrayAscending".(¼ÒÙùûÿÿÿÿ
 €
-java:S1488¬"iImmediately return this expression instead of assigning it to the temporary variable "statArrayPosition".(¿€¢œ
+java:S1488¤"iImmediately return this expression instead of assigning it to the temporary variable "statArrayPosition".(¿€¢œ
 }
-java:S1488´"aImmediately return this expression instead of assigning it to the temporary variable "raceArray".(©¶ŠÜÿÿÿÿÿ
+java:S1488¬"aImmediately return this expression instead of assigning it to the temporary variable "raceArray".(©¶ŠÜÿÿÿÿÿ
 7
 java:S1220""Move this file to a named package.8ÄŒ“×/
 a
 java:S1226!"KIntroduce a new variable instead of reusing the parameter "formula1Driver".(¹Õ´×
-d
-java:S2095¤"HUse try-with-resources or close this "FileWriter" in a "finally" clause.(‹Êõ…ûÿÿÿÿ
 \
-java:S2095Ø"EUse try-with-resources or close this "Scanner" in a "finally" clause.(‡†œ
-a
-java:S2095Æ"EUse try-with-resources or close this "Scanner" in a "finally" clause.(èŸ¾àûÿÿÿÿ
+java:S2095Ğ"EUse try-with-resources or close this "Scanner" in a "finally" clause.(‡†œ
 d
-java:S2095¶"HUse try-with-resources or close this "FileWriter" in a "finally" clause.(’İõûÿÿÿÿ
+java:S2095¢"HUse try-with-resources or close this "FileWriter" in a "finally" clause.(‹Êõ…ûÿÿÿÿ
+a
+java:S2095Ä"EUse try-with-resources or close this "Scanner" in a "finally" clause.(èŸ¾àûÿÿÿÿ
+d
+java:S2095´"HUse try-with-resources or close this "FileWriter" in a "finally" clause.(’İõûÿÿÿÿ

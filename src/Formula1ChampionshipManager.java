@@ -3,11 +3,11 @@ import java.io.*;
 import java.util.*;
 
 public class Formula1ChampionshipManager implements ChampionshipManager{
-    static ArrayList <Formula1Driver> driverList=new ArrayList<Formula1Driver>();
-    static ArrayList <Race> raceInfo=new ArrayList<Race>();
+    static ArrayList <Formula1Driver> driverList=new ArrayList<Formula1Driver>(); //Array to store Formula1 Driver information
+    static ArrayList <Race> raceInfo=new ArrayList<Race>(); //Array to store race information such as race name and date
 
     File formula1File = new File("playerInformation.txt"); //File to store data of drivers such as driver name
-    File formula1File2 = new File("raceInformation.txt"); // File to store data of races such as race name, date
+    File formula1File2 = new File("raceInformation.txt"); //File to store data of races such as race name, date
 
     //This method is to get all names of current drivers as a list
     public ArrayList nameToString(){
@@ -32,7 +32,7 @@ public class Formula1ChampionshipManager implements ChampionshipManager{
     public void createDriver(Formula1Driver formula1Driver, String name, String location, String team, int firstPositions, int secondPositions, int thirdPositions, int totalPoints, int numberOfRaces) {
         formula1Driver = new Formula1Driver(name,location,team,firstPositions,secondPositions,thirdPositions
                 ,totalPoints,numberOfRaces);
-        driverList.add(formula1Driver);
+        driverList.add(formula1Driver); //Adding the driver to the array
         try {
             saveToFileDriverInfo();
         } catch (IOException e) {
@@ -68,7 +68,7 @@ public class Formula1ChampionshipManager implements ChampionshipManager{
             System.out.println("");
             System.out.println("Enter the name of the driver to delete?");
             String name=input.next();
-            if(nameList.contains(name)){
+            if(nameList.contains(name)){ //Checking if the driver name is valid or if the name is an existing name
                 int index= nameList.indexOf(name);
                 driverList.remove(index);
                 System.out.println("Driver: "+name+" successfully deleted!\n");
@@ -124,7 +124,7 @@ public class Formula1ChampionshipManager implements ChampionshipManager{
     //Displaying Formula1 Points Table
     @Override
     public void displayFormula1DriverTable() {
-        Collections.sort(driverList, new ComparePoints());
+        Collections.sort(driverList, new ComparePoints()); //Sorting according to total number of points
         String[][] formula1Table = new String[driverList.size()+1][];
 
         formula1Table[0] = new String[]{"Name","Location","Team","1st Places","2nd Places","3rd Places",
@@ -148,8 +148,6 @@ public class Formula1ChampionshipManager implements ChampionshipManager{
     constructor team when the system recognizes a new driver name. */
     @Override
     public void addRaceResult(String[] racePositions, String rDate, String rName,String first,String second,String third) {
-        Formula1Driver formula1Driver=new Formula1Driver();
-
         int []pointsAllocationList={25,18,15,12,10,8,6,4,2,1}; //Points allocation according to the position from 1 to 10
 
         String raceName=rName;
@@ -158,7 +156,7 @@ public class Formula1ChampionshipManager implements ChampionshipManager{
         Race r1 = new Race(raceName,raceDate,first,second,third);
         raceInfo.add(r1);
 
-        ArrayList nameList=new ArrayList();
+        ArrayList nameList;
         nameList=nameToString();
 
         int firstPositions,secondPositions,thirdPositions;
@@ -224,6 +222,7 @@ public class Formula1ChampionshipManager implements ChampionshipManager{
                         break;
                 case 3:
                     if(nameList.contains(racePositions[y])) {
+                        //Calling updateStatistics method to update stats of the driver
                         updateStatistics(nameList,racePositions,y,pointsAllocationList);
                     }
                         break;
@@ -273,7 +272,6 @@ public class Formula1ChampionshipManager implements ChampionshipManager{
     /*This method gets called after the execution of the previous method in order to update statistics such as total points
      after adding new race results to the system. */
     public void updateStatistics(ArrayList nameList,String[] racePositions,int y,int []pointsAllocationList){
-        int firstPositions,secondPositions,thirdPositions;
         int totalPoints;
         int participatedRaces;
         int index=nameList.indexOf(racePositions[y]);
@@ -326,16 +324,10 @@ public class Formula1ChampionshipManager implements ChampionshipManager{
         Scanner reader=new Scanner(formula1File);
         while(reader.hasNext()){
             String fileContent = reader.nextLine();
-            String[] driverInfoArray = fileContent.split(" ");
+            String[] driverInfoArray = fileContent.split(" "); //Reading the file word by word, splitting accordingly.
             updateSystemDriverInfo(driverInfoArray[0], driverInfoArray[1],driverInfoArray[2],driverInfoArray[3],driverInfoArray[4],driverInfoArray[5],
                     driverInfoArray[6],driverInfoArray[7]);
         }
-//        FileInputStream formula1File2=new FileInputStream("raceInformation.txt");
-//        while(reader.hasNext()){
-//            String fileContent = reader.nextLine();
-//            String[] raceInfoArray = fileContent.split(" ");
-//            updateSystemRaceInfo(raceInfoArray[0], raceInfoArray[1],raceInfoArray[2],raceInfoArray[3],raceInfoArray[4]);
-//        }
     }
 
     //Getting all saved data of races into the system from the file
@@ -382,7 +374,7 @@ public class Formula1ChampionshipManager implements ChampionshipManager{
     /*This method gets called inside 'driverStatTableDescending()', 'driverStatTableAscending()',
      and 'driverStatTablePosition()'. Returns statArray which stores statistics of drivers */
     public static String[][] statTable(){
-        String[] statType=new String[8];
+        String[] statType;
         String[][] statArray=new String[driverList.size()][8];
         for(int x=0;x< driverList.size();x++){
             for(int y=0;y<8;y++){
@@ -397,7 +389,7 @@ public class Formula1ChampionshipManager implements ChampionshipManager{
 
     //Displaying race information in the GUI
     public static String[][] raceInfoTable(){
-        String[] type=new String[2];
+        String[] type;
         String[][] raceInfoArray=new String[raceInfo.size()][5];
         for(int x=0;x< raceInfo.size();x++){
             for(int y=0;y<5;y++){
@@ -440,7 +432,6 @@ public class Formula1ChampionshipManager implements ChampionshipManager{
     //Generating a random race with random results.
     public void randomRace(){
         ArrayList <Integer> randomDrivers=new ArrayList<Integer>();
-        Scanner input=new Scanner(System.in);
         String dateOfRace;
         String nameOfRace;
 
