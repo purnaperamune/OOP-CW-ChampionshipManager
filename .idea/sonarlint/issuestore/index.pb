@@ -17,12 +17,8 @@ F
 src/ComparePoints.java,8/4/84d9c038484c35d491a7d8450ee29ac68e409b35
 ?
 src/Driver.java,e/a/ea231aaad176d8f1f9750c0c7a3e360c9fe3ef1c
-T
-$src/Formula1ChampionshipManager.java,0/4/042c7f9ad384c94f8bf01eb99e0e58c5c71d35b3
 G
 src/Formula1Driver.java,6/5/6512eb4344e12898e2d5bc4a614531834c70b4f7
-C
-src/MenuOption.java,8/6/865fe519de451419240dc5bb4408b24a87ceb4a2
 G
 src/PointsTableGUI.java,7/c/7c7e79b04fc3b837a83c2c0021a0ca8c7ebc0fc4
 =

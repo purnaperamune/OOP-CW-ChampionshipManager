@@ -150,7 +150,12 @@ public class MenuOption {
     //This method calls the 'displayFormula1DriverTable()' method in Formula1ChampionshipManager class to display points table
     public static void displayFormula1DriverTable(){
         Formula1ChampionshipManager formula1ChampionshipManager=new Formula1ChampionshipManager();
-        formula1ChampionshipManager.displayFormula1DriverTable();
+        if(formula1ChampionshipManager.driverList.size()==0){ //Checking if there is a driver to display
+            System.out.println("No existing driver to display!\n");
+        }
+        else {
+            formula1ChampionshipManager.displayFormula1DriverTable();
+        }
     }
 
     //This method is to get the driver positions of a new race in order to update the statistics such as total points
