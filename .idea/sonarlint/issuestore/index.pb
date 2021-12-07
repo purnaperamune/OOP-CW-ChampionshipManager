@@ -33,3 +33,7 @@ M
 tests/Formula1DriverTest.java,0/a/0a3aeec52573bc5bbd39171e0110be507e7adc60
 C
 tests/RaceTest.java,1/e/1e0346782452e5632ee99371284d2edf9f1fd2cf
+C
+src/MenuOption.java,8/6/865fe519de451419240dc5bb4408b24a87ceb4a2
+T
+$src/Formula1ChampionshipManager.java,0/4/042c7f9ad384c94f8bf01eb99e0e58c5c71d35b3

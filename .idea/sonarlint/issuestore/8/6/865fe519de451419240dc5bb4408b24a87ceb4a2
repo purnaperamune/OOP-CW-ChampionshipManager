@@ -1,0 +1,66 @@
+
+J
+java:S3740F"/Provide the parametrized type for this generic.(’¦ÌÃúÿÿÿÿ
+K
+java:S3740ˆ"/Provide the parametrized type for this generic.(’¦ÌÃúÿÿÿÿ
+K
+java:S3740¦"/Provide the parametrized type for this generic.(’¦ÌÃúÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(Ğû¶Î
+N	java:S106"9Replace this use of System.out or System.err by a logger.(•éõ«
+N	java:S1066"9Replace this use of System.out or System.err by a logger.(‹Å½Ö
+N	java:S1069"9Replace this use of System.out or System.err by a logger.(™Û£¿
+S	java:S106J"9Replace this use of System.out or System.err by a logger.(Üìúóûÿÿÿÿ
+N	java:S106M"9Replace this use of System.out or System.err by a logger.(å™ˆã
+S	java:S106P"9Replace this use of System.out or System.err by a logger.(İÃĞĞøÿÿÿÿ
+S	java:S106T"9Replace this use of System.out or System.err by a logger.(¤¬½†üÿÿÿÿ
+S	java:S106V"9Replace this use of System.out or System.err by a logger.(Òí£Úûÿÿÿÿ
+M	java:S106X"9Replace this use of System.out or System.err by a logger.(ßñô
+N	java:S106Z"9Replace this use of System.out or System.err by a logger.(­Ïµ
+S	java:S106\"9Replace this use of System.out or System.err by a logger.(İ¿Èºşÿÿÿÿ
+N	java:S106^"9Replace this use of System.out or System.err by a logger.(ßÍÉ
+S	java:S106`"9Replace this use of System.out or System.err by a logger.(ë‰¶ìüÿÿÿÿ
+K
+java:S2209l"5Change this instance-reference to a static reference.(ùÜ›
+N	java:S106m"9Replace this use of System.out or System.err by a logger.(“—´
+P
+java:S2209w"5Change this instance-reference to a static reference.(»²ØÙÿÿÿÿÿ
+S	java:S106x"9Replace this use of System.out or System.err by a logger.(¸ ıÿÿÿÿ
+L
+java:S2209„"5Change this instance-reference to a static reference.(ä·ú
+T	java:S106…"9Replace this use of System.out or System.err by a logger.(¸ ıÿÿÿÿ
+O	java:S106"9Replace this use of System.out or System.err by a logger.(ÏÚÚÕ
+T	java:S106"9Replace this use of System.out or System.err by a logger.(·¤í¯ÿÿÿÿÿ
+X
+java:S2209™"5Change this instance-reference to a static reference.(»²ØÙÿÿÿÿÿ8µ§ØÙ/
+T	java:S106š"9Replace this use of System.out or System.err by a logger.(¸ ıÿÿÿÿ
+T	java:S106¬"9Replace this use of System.out or System.err by a logger.(²çÍúÿÿÿÿ
+O	java:S106¯"9Replace this use of System.out or System.err by a logger.(÷¼Å
+O	java:S106²"9Replace this use of System.out or System.err by a logger.(µüä”
+T	java:S106´"9Replace this use of System.out or System.err by a logger.(©¡¤ßşÿÿÿÿ
+T	java:S106¸"9Replace this use of System.out or System.err by a logger.(ÿÁêÅüÿÿÿÿ
+T	java:S106¼"9Replace this use of System.out or System.err by a logger.(ÿÁêÅüÿÿÿÿ
+T	java:S106½"9Replace this use of System.out or System.err by a logger.(Š·‡ıÿÿÿÿ
+T	java:S106À"9Replace this use of System.out or System.err by a logger.(ƒÇãˆúÿÿÿÿ
+T	java:S106Á"9Replace this use of System.out or System.err by a logger.(ÿÁêÅüÿÿÿÿ
+O	java:S106Ã"9Replace this use of System.out or System.err by a logger.(‚áĞ
+N	java:S106Ä"9Replace this use of System.out or System.err by a logger.(—ûïM
+O	java:S106È"9Replace this use of System.out or System.err by a logger.(ÀÂ‘Œ
+O	java:S106Í"9Replace this use of System.out or System.err by a logger.(ï¾
+O	java:S106Î"9Replace this use of System.out or System.err by a logger.( É
+O	java:S106Ï"9Replace this use of System.out or System.err by a logger.(ï¾
+U	java:S106Ğ"9Replace this use of System.out or System.err by a logger.(°•Ş8À§ØÙ/
+v
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(ªº»Úıÿÿÿÿ8å¢«‡Ù/
+‚
+java:S1192x"`Define a constant instead of duplicating this literal "No existing driver to display!
+" 3 times.(¸ ıÿÿÿÿ8Â§ØÙ/
+T
+java:S1155l">Use isEmpty() to check whether the collection is empty or not.(ùÜ›
+Y
+java:S1155w">Use isEmpty() to check whether the collection is empty or not.(»²ØÙÿÿÿÿÿ
+U
+java:S1155„">Use isEmpty() to check whether the collection is empty or not.(ä·ú
+a
+java:S1155™">Use isEmpty() to check whether the collection is empty or not.(»²ØÙÿÿÿÿÿ8Å§ØÙ/
+0
+java:S1220""Move this file to a named package.
